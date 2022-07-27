@@ -5,13 +5,88 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Applied Power Electronics Conference</title>
-  <link rel="stylesheet" href="styles/index.css">
   <link rel="shortcut icon" href="assets/icons/favicon.png" type="image/x-icon">
-  <script src="styles/index.css" defer></script>
+  <link rel="stylesheet" href="styles/index.css">
+  <script src="scripts/index.js" defer></script>
 </head>
 <body>
-  <header></header>
-  <main></main>
-  <footer></footer>
+  <header>
+    <div id="headline">
+      <a href="www.facebook.com"><img src="/assets/icons/fbicon.png" alt="facebook icon"></a>
+      <a href="www.twitter.com"><img src="assets/icons/twiticon.png" alt="twitter icon"></a>
+      <a href="#">English</a>
+      <a href="#">My Page</a>
+      <a href="#">Logout</a>
+    </div>
+    <a href="#"><img src="#" alt="APEC logo"></a>
+    <nav>
+      <button id="menu" type="button" onclick="menu()">
+        <span id="hamline1"></span>
+        <span id="hamline2"></span>
+        <span id="hamline3"></span>
+      </button>
+      <ul>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Program</a></li>
+        <li><a href="#">Join</a></li>
+        <li><a href="#">Sponsor</a></li>
+        <li><a href="#">News</a></li>
+      </ul>
+    </nav>
+    <a id="campaign" href="#">Campaign</a>
+  </header>
+  <main>
+    <section id="home">
+      <h1 id="title"><span id="hello">"Hello!" Sharing World<br></span>Applied Power Electronics Conference 2022</h1>
+      <p>The Applied Power Electronics Conference (APEC) focuses on the practical and applied aspects of the power electronics business. The APEC Plenary Session continues the long-standing tradition of addressing issues of immediate and long-term interest to the practicing power electronic engineer. The APEC plenary presentations typically have been from invited distinguished professionals.</p>
+      <p>We hope you will join us in Orlando, March 19-23, 2023 at the Orange County Convention Center!</p>
+    </section>
+    <section id="program">
+      <h2>Main Program</h2>
+      <article class="program">
+        <img src="assets/icons/icon_01.png" alt="lecture icon">
+        <h3>Lecture</h3>
+        <p>Listen to the speakers from various countries about the practical and applied aspects of the power electronics business.</p>
+      </article>
+      <article class="program">
+        <img src="assets/icons/icon_02.png" alt="exhibition icon">
+        <h3>Exhibition</h3>
+        <p>Have a look on new implemented ideas created by our experts.</p>
+      </article>
+      <article class="program">
+        <img src="assets/icons/icon_03.png" alt="forum icon">
+        <h3>Forum</h3>
+        <p>Have the time to share your thoughts and opinions with experts for each topic.</p>
+      </article>
+      <article class="program">
+        <img src="assets/icons/icon_04.png" alt="workshop icon">
+        <h3>Workshop</h3>
+        <p>Try our new design tools. Get your designs to the next level.</p>
+      </article>
+      <article class="program">
+        <img src="assets/icons/icon_05.png" alt="ignite icon">
+        <h3>Ignite</h3>
+        <p>Get the opportunities to network with affiliates around the world, also after the conferences.</p>
+      </article>
+      <a id="buytickets" href="#">Save The Date!</a>
+    </section>
+    <section id="speakers">
+      <h2>Featured Speakers</h2>
+      <!-- Articles -->
+    </section>
+  </main>
+  <footer>
+    <section id="partner">
+      <h2>Partner</h2>
+      <div>
+        <img src="assets/icons/IEEE.png" alt="IEEE">
+
+      </div>
+    </section>
+    <section id="news">
+      <img src="/assets/icons/APEC.png" alt="APEC">
+      © Some rights reserved.
+    </section>
+  </footer>
 </body>
 </html>
