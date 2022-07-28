@@ -1,4 +1,18 @@
 // Script
+
+const menuIcon = document.getElementsByClassName('toggle')[0];
+const navbarLinks = document.getElementsByClassName('navbar-links')[0];
+const bars = document.getElementsByClassName('bar');
+const navbar = document.getElementById('navbar');
+
+menuIcon.addEventListener('click', () => {
+  navbarLinks.classList.toggle('active');
+  navbar.classList.toggle('active');
+  bars[0].classList.toggle('active');
+  bars[1].classList.toggle('active');
+  bars[2].classList.toggle('active');
+});
+
 const speakers = [{
   name: 'Alex Gerfer',
   picture: 'assets/images/speaker1.png',

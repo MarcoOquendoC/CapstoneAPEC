@@ -11,27 +11,33 @@
 </head>
 <body>
   <header>
-    <div id="headline">
+    <div id="topline">
       <a href="www.facebook.com"><img src="/assets/icons/fbicon.png" alt="facebook icon"></a>
       <a href="www.twitter.com"><img src="assets/icons/twiticon.png" alt="twitter icon"></a>
       <a href="#">English</a>
       <a href="#">My Page</a>
       <a href="#">Logout</a>
     </div>
-    <a href="#"><img src="#" alt="APEC logo"></a>
-    <nav>
-      <button id="menu" type="button" onclick="menu()">
-        <span id="hamline1"></span>
-        <span id="hamline2"></span>
-        <span id="hamline3"></span>
-      </button>
-      <ul>
-        <li><a href="#">About</a></li>
-        <li><a href="#">Program</a></li>
-        <li><a href="#">Join</a></li>
-        <li><a href="#">Sponsor</a></li>
-        <li><a href="#">News</a></li>
-      </ul>
+    <nav id="navbar">
+      <div class="secondline">
+        <a class="brand-title" href="#">
+          <img src="/assets/icons/APEClogo.png" alt="APEC logo">
+        </a>
+        <a href="#" class="toggle">
+          <span class="bar bar1"></span>
+          <span class="bar bar2"></span>
+          <span class="bar bar3"></span>
+        </a>
+      </div>
+      <div class="navbar-links">
+        <ul>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Program</a></li>
+          <li><a href="#">Join</a></li>
+          <li><a href="#">Sponsor</a></li>
+          <li><a href="#">News</a></li>
+        </ul>
+      </div>
     </nav>
     <a id="campaign" href="#">Campaign</a>
   </header>
@@ -83,10 +89,10 @@
 
       </div>
     </section>
-    <section id="news">
-      <img src="/assets/icons/APEC.png" alt="APEC">
+    <div id="news">
+      <img src="/assets/icons/APEClogo.png" alt="APEC">
       © Some rights reserved.
-    </section>
+    </div>
   </footer>
 </body>
 </html>
