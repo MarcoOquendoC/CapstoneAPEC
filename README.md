@@ -1,4 +1,4 @@
-![MIcroverse](https://img.shields.io/badge/Microverse-blueviolet) ![HTML](https://img.shields.io/badge/-HTML-orange) ![CSS](https://img.shields.io/badge/-CSS-blue) ![JavaScript](https://img.shields.io/badge/-JavaScript-yellow)
+
 
 # Capstone #1 :  Applied Power Electronics Conference (APEC)
 - This project is a conference-related website created to master all the knowledge acquired in Microverse module 1 curriculum.

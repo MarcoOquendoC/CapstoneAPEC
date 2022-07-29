@@ -23,13 +23,13 @@ const speakers = [{
   name: 'John H. Scott',
   picture: 'assets/images/speaker2.png',
   title: 'On the Moon to Stay: Power Electronics Technology Challenges on the Lunar Surface - APEC',
-  info: 'John H. Scott, NASA Space Technology Mission Directorate, delivers his plenary presentation about the challenges facing power electronics when sustaining life on the surface of the moon.',
+  info: 'NASA Space Technology Mission Directorate. The challenges facing power electronics when sustaining life on the surface of the moon.',
 },
 {
   name: 'Jelena Popovic & Liuchen Chang',
   picture: 'assets/images/speaker3.png',
   title: 'Energy Access: Challenges, Opportunities, & our Contributions',
-  info: 'Together, co-presenters Jelena Popovic, University of Twente, The Netherlands, and Liuchen Chang, University of New Brunswick, Fredericton, Canada, discuss topics related to the challenges of accessing energy resources around the world. Popovic and Chang present the IEEE-PELS initiative, IEEE Empower a Billion Lives.',
+  info: 'Together, co-presenters discuss topics related to the challenges of accessing energy resources around the world. Popovic and Chang present the IEEE-PELS initiative, IEEE Empower a Billion Lives.',
 },
 {
   name: 'Gideon van Zyl',
@@ -52,7 +52,7 @@ const speakers = [{
 
 const container = document.getElementById('speakers');
 
-speakers.forEach((speaker) => {
+speakers.forEach((speaker, index) => {
   const article = document.createElement('article');
   article.classList.add('speaker');
 

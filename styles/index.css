@@ -6,7 +6,7 @@
   --color2: #ec5242;
   --color3: #d3d3d3;
   --color4: #ee7366;
-  --color5: #3e424d;
+  --color5: rgba(73, 77, 90, 0.5);
 
   --font1: 'COCOGOOSE', sans-serif;
   --font2: 'Lato', sans-serif;
@@ -37,6 +37,7 @@ body {
   width: 100%;
   transition: all 500ms ease-in-out;
   height: 100vh;
+  z-index: 1;
 }
 
 #navbar.active {
@@ -137,7 +138,7 @@ body {
   border: 1px solid white;
 }
 
-#place {
+#date {
   width: calc(100% - 2rem);
   display: block;
   margin: auto;
@@ -145,8 +146,18 @@ body {
   font-family: var(--font1);
 }
 
+#place {
+  width: calc(100% - 2rem);
+  display: block;
+  margin: auto;
+  padding: 0.5rem;
+  font-size: 0.8rem;
+  padding-bottom: 1rem;
+}
+
 #program {
   background-color: var(--color1);
+  background-image: url('/assets/images/pattern_bg.png');
   padding: 1rem;
   display: flex;
   flex-direction: column;
@@ -155,6 +166,19 @@ body {
 
 #program h2 {
   color: white;
+  position: relative;
+  display: inline-block;
+  margin-bottom: 1rem;
+}
+
+#program h2::after {
+  position: absolute;
+  background-color: var(--color2);
+  height: 0.1rem;
+  width: 3rem;
+  left: calc(50% - 1.5rem);
+  bottom: -0.5rem;
+  content: "";
 }
 
 .program {
@@ -170,6 +194,10 @@ body {
 
 .program:hover {
   border: 1px solid white;
+}
+
+.program img {
+  padding-left: 1rem;
 }
 
 .program h3 {
@@ -228,6 +256,19 @@ body {
 
 .name {
   margin-bottom: 0.3rem;
+  position: relative;
+  display: inline-block;
+  margin-bottom: 0.8rem;
+}
+
+.name::after {
+  position: absolute;
+  background-color: var(--color5);
+  height: 0.1rem;
+  width: 3rem;
+  left: 0;
+  bottom: -0.5rem;
+  content: "";
 }
 
 .title {
@@ -241,13 +282,191 @@ body {
   font-size: 0.9rem;
 }
 
+.hide {
+  display: none;
+}
 
-
-
-/* 
-#home,
-#program,
 footer {
   display: none;
 }
- */
+
+
+@media only screen and (min-width: 768px) {
+  #topline {
+    display: flex;
+    justify-content: flex-end;
+    background-color: var(--color1);
+    align-items: center;
+    position: fixed;
+    width: 100%;
+  }
+
+  #topline a {
+    color: white;
+    padding: 0 1rem 0 1rem;
+  }
+
+  #navbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: unset;
+    background-color: white;
+    position: fixed;
+    top: 22px;
+  }
+
+  .brand-title {
+    display: block;
+    margin-left: 1rem;
+  }
+
+  .toggle {
+    display: none;
+  }
+
+  .navbar-links {
+    display: block;
+    width: 100%;
+  }
+
+  .navbar-links ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: stretch;
+    width: 100%;
+  }
+
+  .navbar-links ul li a {
+    font-size: 1rem;
+  }
+
+  #campaign {
+    display: block;
+    padding: 0.5rem 1rem 0.5rem 1rem;
+    margin-right: 1rem;
+    background-color: var(--color2);
+  }
+
+  #title {
+    padding-top: 3rem;
+    padding-left: 2rem;
+  }
+
+  #hello {
+    padding-top: 2rem;
+    display: block;
+    font-size: 3rem;
+  }
+
+  #textbox1 {
+    font-size: 0.8rem;
+    width: 40rem;
+    margin-left: 2rem;
+  }
+
+  #date {
+    font-size: 1.5rem;
+  }
+
+  #place {
+    font-size: 1rem;
+  }
+
+  .p-container {
+    display: flex;
+    gap: 0.5rem;
+  }
+
+  .program {
+    justify-content: flex-start;
+    flex-direction: column;
+    height: unset;
+    width: 18vw;
+    align-items: center;
+    gap: 0.5rem;
+  }
+
+  .program h3 {
+    margin-top: 0;
+    padding: 0;
+  }
+
+  .program p {
+    width: 90%;
+    font-size: 0.9rem;
+    margin-right: 0;
+    text-align: center;
+  }
+
+  .program img {
+    padding-left: 0;
+    margin-bottom: 0;
+    margin-top: 1rem;
+  }
+
+  #buytickets {
+    background-color: unset;
+    position: relative;
+  }
+
+  #buytickets::after {
+    position: absolute;
+    background-color: var(--color3);
+    height: 0.1rem;
+    width: 7rem;
+    left: calc(50% - 3.5rem);
+    top: calc(50% + 0.6rem);
+    content: "";
+  }
+
+  #speakers {
+    grid-template-columns: 1fr 1fr;
+    width: 95%;
+  }
+
+  footer {
+    display: block;
+  }
+
+  #partner {
+    background-color: var(--color1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    padding: 1rem;
+  }
+
+  #partner h2 {
+    color: var(--color3);
+    width: 100%;
+    text-align: center;
+    position: relative;
+  }
+
+  #partner h2::after {
+    position: absolute;
+    background-color: var(--color2);
+    height: 0.1rem;
+    width: 2rem;
+    left: calc(50% - 1rem);
+    bottom: -0.5rem;
+    content: "";
+  }
+
+  .logos {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+    opacity: 0.6;
+  }
+
+  #news {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin: 2rem;
+  }
+}
