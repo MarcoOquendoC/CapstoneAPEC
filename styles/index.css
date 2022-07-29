@@ -7,7 +7,6 @@
   --color3: #d3d3d3;
   --color4: #ee7366;
   --color5: rgba(73, 77, 90, 0.5);
-
   --font1: 'COCOGOOSE', sans-serif;
   --font2: 'Lato', sans-serif;
 }
@@ -125,7 +124,6 @@ body {
 #hello {
   font-family: var(--font1);
   background-image: url('../assets/images/background3.png');
-  background-clip: text;
   color: transparent;
   -webkit-background-clip: text;
 }
@@ -255,7 +253,6 @@ body {
 }
 
 .name {
-  margin-bottom: 0.3rem;
   position: relative;
   display: inline-block;
   margin-bottom: 0.8rem;
@@ -275,7 +272,7 @@ body {
   color: var(--color2);
   margin-bottom: 0.3rem;
   font-size: 0.9rem;
-  font-style: italic
+  font-style: italic;
 }
 
 .info {
@@ -290,22 +287,7 @@ footer {
   display: none;
 }
 
-
 @media only screen and (min-width: 768px) {
-  #topline {
-    display: flex;
-    justify-content: flex-end;
-    background-color: var(--color1);
-    align-items: center;
-    position: fixed;
-    width: 100%;
-  }
-
-  #topline a {
-    color: white;
-    padding: 0 1rem 0 1rem;
-  }
-
   #navbar {
     display: flex;
     flex-direction: row;
@@ -340,6 +322,20 @@ footer {
 
   .navbar-links ul li a {
     font-size: 1rem;
+  }
+
+  #topline {
+    display: flex;
+    justify-content: flex-end;
+    background-color: var(--color1);
+    align-items: center;
+    position: fixed;
+    width: 100%;
+  }
+
+  #topline a {
+    color: white;
+    padding: 0 1rem 0 1rem;
   }
 
   #campaign {
@@ -377,13 +373,14 @@ footer {
   .p-container {
     display: flex;
     gap: 0.5rem;
+    justify-content: center;
   }
 
   .program {
     justify-content: flex-start;
     flex-direction: column;
     height: unset;
-    width: 18vw;
+    max-width: 18%;
     align-items: center;
     gap: 0.5rem;
   }

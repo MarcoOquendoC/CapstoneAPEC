@@ -52,7 +52,7 @@ const speakers = [{
 
 const container = document.getElementById('speakers');
 
-speakers.forEach((speaker, index) => {
+speakers.forEach((speaker) => {
   const article = document.createElement('article');
   article.classList.add('speaker');
 
