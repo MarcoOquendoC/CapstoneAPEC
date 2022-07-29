@@ -1,3 +1,4 @@
+@import "./about.css";
 @import url('https://fonts.cdnfonts.com/css/cocogoose');
 @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
 
@@ -7,17 +8,17 @@
   --color3: #d3d3d3;
   --color4: #ee7366;
   --color5: rgba(73, 77, 90, 0.5);
-  --font1: 'COCOGOOSE', sans-serif;
   --font2: 'Lato', sans-serif;
+  --font1: 'COCOGOOSE', sans-serif;
 }
 
 * {
-  text-decoration: none;
-  list-style: none;
-  box-sizing: border-box;
   margin: 0;
   padding: 0;
+  list-style: none;
   color: var(--color1);
+  text-decoration: none;
+  box-sizing: border-box;
   font-family: var(--font2);
 }
 
@@ -30,13 +31,13 @@ body {
 }
 
 #navbar {
-  display: flex;
-  flex-direction: column;
-  position: fixed;
-  width: 100%;
-  transition: all 500ms ease-in-out;
-  height: 100vh;
   z-index: 1;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  position: fixed;
+  flex-direction: column;
+  transition: all 500ms ease-in-out;
 }
 
 #navbar.active {
@@ -101,10 +102,10 @@ body {
 }
 
 .navbar-links ul li a {
-  color: var(--color1);
-  font-size: 2rem;
   width: 100%;
+  font-size: 2rem;
   text-align: center;
+  color: var(--color1);
   padding: 1rem 0 1rem 0;
 }
 
@@ -113,82 +114,82 @@ body {
 }
 
 #home {
-  background-image: url("../assets/images/background1.png");
   padding-top: 4rem;
+  background-image: url("../assets/images/background1.png");
 }
 
 #title {
-  color: var(--color2);
   padding-left: 1rem;
+  color: var(--color2);
 }
 
 #hello {
-  font-family: var(--font1);
-  background-image: url('../assets/images/background3.png');
   color: transparent;
+  font-family: var(--font1);
   -webkit-background-clip: text;
+  background-image: url('../assets/images/background3.png');
 }
 
 #textbox1 {
-  width: calc(100% - 2rem);
-  display: block;
   margin: auto;
+  display: block;
   padding: 0.5rem;
+  width: calc(100% - 2rem);
   border: 2px solid white;
 }
 
 #date {
-  width: calc(100% - 2rem);
-  display: block;
   margin: auto;
+  display: block;
   padding: 0.5rem;
+  width: calc(100% - 2rem);
   font-family: var(--font1);
 }
 
 #place {
-  width: calc(100% - 2rem);
-  display: block;
   margin: auto;
+  display: block;
   padding: 0.5rem;
   font-size: 0.8rem;
   padding-bottom: 1rem;
+  width: calc(100% - 2rem);
 }
 
 #program {
+  display: flex;
+  padding: 1rem;
+  align-items: center;
+  flex-direction: column;
   background-color: var(--color1);
   background-image: url('/assets/images/pattern_bg.png');
-  padding: 1rem;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
 }
 
 #program h2 {
   color: white;
   position: relative;
-  display: inline-block;
   margin-bottom: 1rem;
+  display: inline-block;
 }
 
 #program h2::after {
-  position: absolute;
-  background-color: var(--color2);
-  height: 0.1rem;
-  width: 3rem;
-  left: calc(50% - 1.5rem);
-  bottom: -0.5rem;
   content: "";
+  width: 3rem;
+  height: 0.1rem;
+  bottom: -0.5rem;
+  position: absolute;
+  left: calc(50% - 1.5rem);
+  background-color: var(--color2);
 }
 
 .program {
-  color: var(--color3);
+  height: 6rem;
   display: flex;
+  margin-top: 0.1rem;
   align-items: center;
+  color: var(--color3);
+  margin-bottom: 0.1rem;
   justify-content: space-between;
   background-color: var(--color5);
-  margin-top: 0.1rem;
-  margin-bottom: 0.1rem;
-  height: 6rem;
 }
 
 .program:hover {
@@ -200,44 +201,44 @@ body {
 }
 
 .program h3 {
-  color: var(--color2);
   padding: 1rem;
+  color: var(--color2);
 }
 
 .program p {
+  color: white;
   width: calc(55% - 1rem);
   margin: 0.5rem 0.5rem 0.5rem 0;
-  color: white;
 }
 
 #buytickets {
-  color: white;
-  background-color: var(--color2);
   padding: 1rem;
   display: block;
+  color: white;
   margin-top: 1rem;
+  background-color: var(--color2);
 }
 
 #featured-speakers {
   display: flex;
+  align-items: center;
   flex-direction: column;
   background-color: white;
-  align-items: center;
   justify-content: space-between;
 }
 
 #speakers {
   display: grid;
-  grid-template-columns: 1fr;
-  background-color: white;
   place-items: center;
+  background-color: white;
+  grid-template-columns: 1fr;
 }
 
 .speaker {
+  width: 95%;
   display: flex;
   margin-top: 1rem;
   margin-bottom: 1rem;
-  width: 95%;
   align-items: flex-start;
 }
 
@@ -245,8 +246,8 @@ body {
   padding-top: 1rem;
   padding-left: 1rem;
   margin-right: 1rem;
-  background-image: url('../assets/images/background4.png');
   background-repeat: no-repeat;
+  background-image: url('../assets/images/background4.png');
 }
 
 .text-container {
@@ -260,20 +261,20 @@ body {
 }
 
 .name::after {
+  left: 0;
+  width: 3rem;
+  content: "";
+  height: 0.1rem;
+  bottom: -0.5rem;
   position: absolute;
   background-color: var(--color5);
-  height: 0.1rem;
-  width: 3rem;
-  left: 0;
-  bottom: -0.5rem;
-  content: "";
 }
 
 .title {
-  color: var(--color2);
-  margin-bottom: 0.3rem;
   font-size: 0.9rem;
   font-style: italic;
+  color: var(--color2);
+  margin-bottom: 0.3rem;
 }
 
 .info {
@@ -289,55 +290,55 @@ footer {
 }
 
 #partner {
-  background-color: var(--color1);
-  display: flex;
-  flex-direction: column;
-  align-items: center;
   gap: 2rem;
   padding: 1rem;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  background-color: var(--color1);
 }
 
 #partner h2 {
-  color: var(--color3);
   width: 100%;
-  text-align: center;
   position: relative;
+  text-align: center;
+  color: var(--color3);
 }
 
 #partner h2::after {
-  position: absolute;
-  background-color: var(--color2);
-  height: 0.1rem;
   width: 2rem;
-  left: calc(50% - 1rem);
-  bottom: -0.5rem;
   content: "";
+  height: 0.1rem;
+  bottom: -0.5rem;
+  position: absolute;
+  left: calc(50% - 1rem);
+  background-color: var(--color2);
 }
 
 .logos {
-  display: flex;
   gap: 1rem;
-  flex-wrap: wrap;
   opacity: 0.6;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 #news {
+  margin: 2rem;
   display: flex;
   align-items: center;
   justify-content: space-around;
-  margin: 2rem;
 }
 
 @media only screen and (min-width: 768px) {
   #navbar {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    height: unset;
-    background-color: white;
-    position: fixed;
     top: 22px;
+    display: flex;
+    height: unset;
+    position: fixed;
+    align-items: center;
+    flex-direction: row;
+    background-color: white;
+    justify-content: space-between;
   }
 
   .brand-title {
@@ -350,15 +351,15 @@ footer {
   }
 
   .navbar-links {
-    display: block;
     width: 100%;
+    display: block;
   }
 
   .navbar-links ul {
+    width: 100%;
     display: flex;
     flex-direction: row;
     justify-content: stretch;
-    width: 100%;
   }
 
   .navbar-links ul li a {
@@ -366,12 +367,12 @@ footer {
   }
 
   #topline {
+    width: 100%;
     display: flex;
+    position: fixed;
+    align-items: center;
     justify-content: flex-end;
     background-color: var(--color1);
-    align-items: center;
-    position: fixed;
-    width: 100%;
   }
 
   #topline a {
@@ -381,9 +382,9 @@ footer {
 
   #campaign {
     display: block;
-    padding: 0.5rem 1rem 0.5rem 1rem;
     margin-right: 1rem;
     background-color: var(--color2);
+    padding: 0.5rem 1rem 0.5rem 1rem;
   }
 
   #title {
@@ -392,14 +393,14 @@ footer {
   }
 
   #hello {
-    padding-top: 2rem;
     display: block;
     font-size: 3rem;
+    padding-top: 2rem;
   }
 
   #textbox1 {
-    font-size: 0.8rem;
     width: 40rem;
+    font-size: 0.8rem;
     margin-left: 2rem;
   }
 
@@ -412,29 +413,29 @@ footer {
   }
 
   .p-container {
-    display: flex;
     gap: 0.5rem;
+    display: flex;
     justify-content: center;
   }
 
   .program {
-    justify-content: flex-start;
-    flex-direction: column;
+    gap: 0.5rem;
     height: unset;
     max-width: 18%;
     align-items: center;
-    gap: 0.5rem;
+    flex-direction: column;
+    justify-content: flex-start;
   }
 
   .program h3 {
-    margin-top: 0;
     padding: 0;
+    margin-top: 0;
   }
 
   .program p {
     width: 90%;
-    font-size: 0.9rem;
     margin-right: 0;
+    font-size: 0.9rem;
     text-align: center;
   }
 
@@ -445,23 +446,23 @@ footer {
   }
 
   #buytickets {
-    background-color: unset;
     position: relative;
+    background-color: unset;
   }
 
   #buytickets::after {
-    position: absolute;
-    background-color: var(--color3);
-    height: 0.1rem;
-    width: 7rem;
-    left: calc(50% - 3.5rem);
-    top: calc(50% + 0.6rem);
     content: "";
+    width: 7rem;
+    height: 0.1rem;
+    position: absolute;
+    top: calc(50% + 0.6rem);
+    left: calc(50% - 3.5rem);
+    background-color: var(--color3);
   }
 
   #speakers {
-    grid-template-columns: 1fr 1fr;
     width: 95%;
+    grid-template-columns: 1fr 1fr;
   }
 
   footer {
@@ -469,42 +470,42 @@ footer {
   }
 
   #partner {
-    background-color: var(--color1);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
     gap: 2rem;
     padding: 1rem;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-color: var(--color1);
   }
 
   #partner h2 {
-    color: var(--color3);
     width: 100%;
-    text-align: center;
     position: relative;
+    text-align: center;
+    color: var(--color3);
   }
 
   #partner h2::after {
-    position: absolute;
-    background-color: var(--color2);
-    height: 0.1rem;
     width: 2rem;
-    left: calc(50% - 1rem);
-    bottom: -0.5rem;
     content: "";
+    height: 0.1rem;
+    bottom: -0.5rem;
+    position: absolute;
+    left: calc(50% - 1rem);
+    background-color: var(--color2);
   }
 
   .logos {
-    display: flex;
     gap: 1rem;
-    flex-wrap: wrap;
     opacity: 0.6;
+    display: flex;
+    flex-wrap: wrap;
   }
 
   #news {
+    margin: 2rem;
     display: flex;
     align-items: center;
     justify-content: space-around;
-    margin: 2rem;
   }
 }
