@@ -267,6 +267,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  transition: all 0.5s ease-in-out;
   box-shadow: inset -100vw -100vh var(--color6);
 }
 
@@ -352,6 +353,12 @@ body {
     background-color: white;
     justify-content: space-between;
     border-bottom: 1px solid var(--color3);
+  }
+
+  #title-about,
+  #textbox1-about,
+  #email {
+    margin-bottom: 3rem;
   }
 
   .brand-title {
