@@ -4,10 +4,10 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>About page</title>
+  <title>About</title>
   <link rel="shortcut icon" href="assets/icons/favicon.png" type="image/x-icon">
-  <link rel="stylesheet" href="styles/index.css">
-  <script src="scripts/index.js" defer></script>
+  <link rel="stylesheet" href="/styles/about.css">
+  <script src="scripts/about.js" defer></script>
 </head>
 <body>
   <div id="main-container">
@@ -19,7 +19,7 @@
         <a href="#">My Page</a>
         <a href="#">Logout</a>
       </div>
-      <nav id="navbar">
+      <nav id='navbar' class="navbar">
         <div class="secondline">
           <a class="brand-title" href="#">
             <img src="/assets/icons/APEClogo.png" alt="APEC logo">
@@ -32,27 +32,61 @@
         </div>
         <div class="navbar-links">
           <ul>
-            <li><a class="nav" href="index.html">Home</a></li>
-            <li><a class="nav" href="about.html">About</a></li>
-            <li><a class="nav" href="#">News</a></li>
-            <li><a class="nav" href="#partner">Sponsor</a></li>
+            <li><a class="nav" href="/index.html">Home</a></li>
+            <li><a class="nav" href="#home">About</a></li>
+            <li><a class="nav" href="#past">Conferences</a></li>
+            <li><a class="nav" href="#partner-about">Partners</a></li>
           </ul>
         </div>
         <a id="campaign" href="#">Campaign</a>
       </nav>
     </header>
-    <main>
+    <main id="about-main">
+      <section id="home">
+        <h1 id="title-about">
+          "Hello! Sharing World"<br>
+          <span id="hello-about">
+            Applied Power Electronics Conference 2022
+          </span>
+        </h1>
+        <p id="textbox1-about">
+           The APEC Plenary Session continues the long-standing tradition of addressing issues of immediate and long-term interest to the practicing power electronic engineer. The APEC plenary presentations typically have been from invited distinguished professionals.
+        </p>
+        <p id="contact-us">
+          Please contact us per Email for any further questions about APEC!
+        </p>
+        <p id="email">
+          marcooquendoc<span>&#64;</span>gmail.com
+        </p>
+      </section>
+      <section id="apec-about">
+        <h2>Applied Power Electronics Conference 2022</h2>
+        <p>The logo of APEC 2022 was decided through the logo competition from 2015</p>
+        <img id="conference-logo" src="/assets/icons/APEClogo2.png" alt="conference logo">
+      </section>
+      <section id="past">
+        <h2>See The Past Conferences</h2>
+        <p>Take a look at the last two conferences which took place in Houston, Texas</p>
+        <div id="thumbnails">
+          <div id="thumbnail1" class="thumbnail">
+            <h3>2022 Brooklyn 6G</h3>
+          </div>
+          <div id="thumbnail2" class="thumbnail">
+            <h3>2022 San Diego</h3>
+          </div>
+        </div>
+      </section>
     </main>
-    <footer>
-      <section id="partner">
+    <footer id="footer">
+      <section id="partner-about">
         <h2>Partner</h2>
-        <div class="logos">
+        <div class="logos-about">
           <img src="assets/icons/IEEE.png" alt="IEEE">
-          <img src="/assets/icons/APEClogo.png" alt="APEC">
+          <img src="assets/icons/APEClogo.png" alt="APEC">
         </div>
       </section>
       <div id="news">
-        <img src="/assets/icons/APEClogo.png" alt="APEC">
+        <img src="assets/icons/APEClogo.png" alt="APEC">
         © Some rights reserved.
       </div>
     </footer>
