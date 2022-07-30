@@ -1,10 +1,23 @@
 // Script
-
-const menuIcon = document.getElementsByClassName('toggle')[0];
-const navbarLinks = document.getElementsByClassName('navbar-links')[0];
-const bars = document.getElementsByClassName('bar');
+const home = document.getElementById('home');
 const navbar = document.getElementById('navbar');
 const navs = document.getElementsByClassName('nav');
+const bars = document.getElementsByClassName('bar');
+const menuIcon = document.getElementsByClassName('toggle')[0];
+const navbarLinks = document.getElementsByClassName('navbar-links')[0];
+const more = document.getElementById('more');
+
+function show() {
+  const speakers = document.getElementsByClassName('speaker');
+  for (let i = 0; i < speakers.length; i += 1) {
+    speakers[i].classList.remove('hide');
+  }
+  more.classList.add('hide');
+}
+
+if (home.offsetWidth <= 767) {
+  more.classList.remove('hide');
+}
 
 function toggle() {
   navbarLinks.classList.toggle('active');
@@ -29,7 +42,7 @@ navs[1].addEventListener('click', closeNav);
 navs[2].addEventListener('click', closeNav);
 navs[3].addEventListener('click', closeNav);
 
-const speakers = [{
+const jsInfo = [{
   name: 'Alex Gerfer',
   picture: 'assets/images/speaker1.png',
   title: 'Space M: The Magnetics Universe & Challenges - APEC',
@@ -66,9 +79,9 @@ const speakers = [{
   info: 'Dr. Deepakraj (Deepak) Divan, Georgia Institute of Technology, presents the closing plenary talk on distributed energy and how to create solutions that use science and technology to achieve impact.',
 }];
 
-const container = document.getElementById('speakers');
+const speakers = document.getElementById('speakers');
 
-speakers.forEach((speaker) => {
+jsInfo.forEach((speaker, index) => {
   const article = document.createElement('article');
   article.classList.add('speaker');
 
@@ -97,5 +110,19 @@ speakers.forEach((speaker) => {
   info.textContent = speaker.info;
   div.appendChild(info);
 
-  container.appendChild(article);
+  if (index > 1 && home.offsetWidth <= 767) {
+    article.classList.add('hide');
+  }
+
+  speakers.appendChild(article);
 });
+
+more.addEventListener('click', show);
+
+const observer = new ResizeObserver((entries) => {
+  const element = entries[0];
+  if (element.contentRect.width > 768) {
+    show();
+  }
+});
+observer.observe(home);
