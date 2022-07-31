@@ -4,6 +4,9 @@
 - This project is a conference-related website created to master all the knowledge acquired in Microverse module 1 curriculum.
 - The information shown in the project is officially available at this [link](https://ieeetv.ieee.org/event/apec-2022).
 
+## Link to Loom Video explaining the features of this project
+- [Video](https://www.loom.com/share/932241de5767476ab2cdfc89ce9b1158)
+
 ## Built With
 - HTML/CSS and JavaScript
 
@@ -24,3 +27,10 @@
 
 ## 📝 License
 - This project is [MIT](./LICENSE) licensed.
+
+
+## 📝 Webpages pictures
+![](https://raw.githubusercontent.com/MarcoOquendoC/CapstoneAPEC/desktop/assets/images/homeMobile1.png)  
+![](https://raw.githubusercontent.com/MarcoOquendoC/CapstoneAPEC/desktop/assets/images/homePage.png)
+![](https://raw.githubusercontent.com/MarcoOquendoC/CapstoneAPEC/desktop/assets/images/aboutMobile.png)
+![](https://raw.githubusercontent.com/MarcoOquendoC/CapstoneAPEC/desktop/assets/images/aboutPage.png)
