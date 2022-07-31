@@ -137,7 +137,7 @@ body {
 }
 
 #hello-about {
-  color: transparent;
+  color: var(--color2);
   background-clip: unset;
   font-family: var(--font1);
   -webkit-background-clip: text;
