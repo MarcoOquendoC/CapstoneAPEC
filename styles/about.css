@@ -141,7 +141,6 @@ body {
   font-family: var(--font1);
   -webkit-background-clip: text;
   background-image: url('../assets/images/background3.png');
-
 }
 
 #textbox1-about {
@@ -309,11 +308,10 @@ body {
 }
 
 #partner-about h2 {
+  width: 100%;
   color: white;
   position: relative;
   text-align: center;
-  color: var(--color3);
-  width: 100%;
 }
 
 #partner-about h2::after {
