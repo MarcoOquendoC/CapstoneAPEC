@@ -115,6 +115,7 @@ body {
 
 #home {
   padding-top: 4rem;
+  background-position: center;
   background-image: url("../assets/images/background1.png");
 }
 
@@ -347,12 +348,20 @@ footer {
 }
 
 @media only screen and (min-width: 768px) {
+  #main-container {
+    max-width: 1000px;
+    display: block;
+    margin: auto;
+  }
+
   #navbar {
     top: 22px;
     width: 100%;
+    z-index: 10;
     height: unset;
     display: flex;
     position: fixed;
+    max-width: 1000px;
     align-items: center;
     flex-direction: row;
     background-color: white;
@@ -369,8 +378,10 @@ footer {
   }
 
   .navbar-links {
-    width: 100%;
     display: block;
+    min-width: 400px;
+    position: absolute;
+    inset: 0 150px 0 auto;
   }
 
   .navbar-links ul {
@@ -388,6 +399,7 @@ footer {
     width: 100%;
     display: flex;
     position: fixed;
+    max-width: 1000px;
     align-items: center;
     justify-content: flex-end;
     background-color: var(--color1);
